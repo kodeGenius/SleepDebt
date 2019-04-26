@@ -9,17 +9,17 @@
 	<h1>SLEEP DEBT CALCULATOR</h1>
 	<form>
 		<label>Enter the number of hours you Slept</label><br> 
-		<select>
-			<option>Sunday</option>
-			<option>Monday</option>
-			<option>Tuesday</option>
-			<option>Wednessday</option>
-			<option>Thursday</option>
-			<option>Friday</option>
-			<option>Saturday</option>
+		<select id="days">
+			<option value="1">Sunday</option>
+			<option value="2">Monday</option>
+			<option value="3">Tuesday</option>
+			<option value="4">Wednessday</option>
+			<option value="5">Thursday</option>
+			<option value="6">Friday</option>
+			<option value="7">Saturday</option>
 		</select>:
 		<input id="actual" type="number" placeholder="Number of Hours You Slept" /> <br>
-		Expected Sleep Hour: <input id="expected" type="number" placeholder="Expected Sleep Hours per day">
+		Expected Sleep Hour: <input id="expected" type="number" placeholder="Expected Sleep Hours per day"><br>
 		<button onclick="sleep();">Check Sleep Debt</button>
 	</form>
 </body>
