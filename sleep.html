@@ -7,6 +7,9 @@
 			margin: 25px 0 0 25px;
 			line-height: 30px;
 		}
+		.in{
+			border-top: : thick;
+		}
 	</style>
 	<script type="text/javascript" src="sleep.js"></script>
 </head>
@@ -16,7 +19,7 @@
 	<aside></aside>
 	<footer></footer>
 	
-	<form>
+	
 		<label>Enter the number of hours you Slept</label><br> 
 		<select id="days">
 			<option value="1">Sunday</option>
@@ -27,9 +30,9 @@
 			<option value="6">Friday</option>
 			<option value="7">Saturday</option>
 		</select>:
-		<input id="actual" width="50%" type="number" placeholder="Number of Hours You Slept" /> <br>
-		Expected Sleep Hour: <input id="expected" type="number" placeholder="Expected Sleep Hours per day"><br>
+		<input class ="in" id="actual" type="number" placeholder="Number of Hours You Slept" /> <br>
+		Expected Sleep Hour: <input class ="in" id="expected" type="number" placeholder="Expected Sleep Hours per day"><br>
 		<button onclick="sleep();">Check Sleep Debt</button>
-	</form>
+	
 </body>
 </html>
