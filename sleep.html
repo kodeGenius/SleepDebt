@@ -2,11 +2,20 @@
 <html>
 <head>
 	<title>Sleep Debt Calculator</title>
-	<style type="text/css"></style>
+	<style type="text/css">
+		body{
+			margin: 25px 0 0 25px;
+			line-height: 30px;
+		}
+	</style>
 	<script type="text/javascript" src="sleep.js"></script>
 </head>
 <body>
-	<h1>SLEEP DEBT CALCULATOR</h1>
+	<header>SLEEP DEBT CALCULATOR</header>
+	<main></main>
+	<aside></aside>
+	<footer></footer>
+	
 	<form>
 		<label>Enter the number of hours you Slept</label><br> 
 		<select id="days">
@@ -18,7 +27,7 @@
 			<option value="6">Friday</option>
 			<option value="7">Saturday</option>
 		</select>:
-		<input id="actual" type="number" placeholder="Number of Hours You Slept" /> <br>
+		<input id="actual" width="50%" type="number" placeholder="Number of Hours You Slept" /> <br>
 		Expected Sleep Hour: <input id="expected" type="number" placeholder="Expected Sleep Hours per day"><br>
 		<button onclick="sleep();">Check Sleep Debt</button>
 	</form>
